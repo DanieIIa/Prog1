@@ -1,15 +1,4 @@
-/*GIT-IT
-git-scm.com -letöltés
-git init
-git status- állapot
-git add a.txt-hozzáadni staging areaba ha változtatjuk
-git commit -m "elso commit" -véglegesités
-git push
 
-git pull - ha tavoli tárolóban változtatják
-git clone https...
-
-*/
 /*
     g++ main.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o main `fltk-config --ldflags --use-images` -std=c++11
 */
