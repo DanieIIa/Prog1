@@ -27,10 +27,6 @@ void print(const std::map<K,V>& m){
 	}
 }
 
-int ssum(int sum, const std::pair<std::string, int>& p){
-	return sum+=p.second;
-}
-
 using namespace std;
 
 int main(){
@@ -57,8 +53,8 @@ try{
 	read_map(msi);
 	print(msi);
 	
-	int sum1 = std::accumulate(msi.begin(), msi.end(),0, ssum()/*[](int sum, const std::pair<string, int>& p){
-							return sum+= p.second;}*/);
+	int sum1 = std::accumulate(msi.begin(), msi.end(),0,[](int sum, const std::pair<string, int>& p){
+							return sum+= p.second;});
 	
 	int sum2 = 0;
 	for(std::pair<std::string, int> a: msi){
